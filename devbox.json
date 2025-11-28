@@ -3,5 +3,5 @@
   "env": {
     "DEVBOX_COREPACK_ENABLED": "true"
   },
-  "packages": ["nodejs@20"]
+  "packages": ["nodejs@24"]
 }

@@ -10,7 +10,7 @@
     "dist"
   ],
   "engines": {
-    "node": "20",
+    "node": "24",
     "pnpm": "8.15.9"
   },
   "packageManager": "pnpm@8.15.9",
