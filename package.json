@@ -23,9 +23,11 @@
     "ignore-walk": "^7.0.0"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.2",
     "@types/ignore-walk": "^4.0.3",
     "@types/node": "^20",
     "prettier": "^3.5.3",
+    "release-it": "^19.0.6",
     "typescript": "^5.7.3",
     "vitest": "^3.0.4"
   }
