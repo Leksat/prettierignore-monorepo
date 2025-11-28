@@ -4,7 +4,7 @@
   "description": "Generate a single .prettierignore from multiple .gitignore and .prettierignore files in a monorepo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Leksat/prettierignore-monorepo"
+    "url": "git+https://github.com/Leksat/prettierignore-monorepo.git"
   },
   "bin": {
     "prettierignore-monorepo": "dist/index.js"
