@@ -1,6 +1,6 @@
 {
   "name": "prettierignore-monorepo",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Generate a single .prettierignore from multiple .gitignore and .prettierignore files in a monorepo",
   "repository": {
     "type": "git",
