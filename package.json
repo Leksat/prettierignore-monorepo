@@ -1,0 +1,19 @@
+{
+  "name": "@custom/prettierignore-monorepo",
+  "private": true,
+  "scripts": {
+    "generate": "tsx index.ts",
+    "test:static": "tsc --noEmit",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "ignore-walk": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/ignore-walk": "^4.0.3",
+    "@types/node": "^20",
+    "vitest": "^3.0.4"
+  }
+}
