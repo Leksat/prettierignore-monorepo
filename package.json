@@ -16,7 +16,8 @@
   "packageManager": "pnpm@8.15.9",
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "test": "tsc --noEmit && vitest run",
+    "format": "prettier --write .",
+    "test": "prettier --check . && tsc --noEmit && vitest run",
     "prepublishOnly": "pnpm build"
   },
   "dependencies": {
