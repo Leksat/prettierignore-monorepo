@@ -1,0 +1,86 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nodejs@20": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#nodejs_20",
+      "source": "devbox-search",
+      "version": "20.19.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yhalv20186gxxgra2jyrm10ywk671fvw-nodejs-20.19.5",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/40v01pqh7w9giwmvxwmbb5w87z5h82gg-nodejs-20.19.5-libv8"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/qp7gg4p4kv1m6cq9xm5w8inkggyf6vq2-nodejs-20.19.5-dev"
+            }
+          ],
+          "store_path": "/nix/store/yhalv20186gxxgra2jyrm10ywk671fvw-nodejs-20.19.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/450w5bzs0afvvn6gphj6azdjsc6jgyrs-nodejs-20.19.5",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/cprrvsb2zlds2ms4vhiaqh4p60rjflzh-nodejs-20.19.5-dev"
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/ig5y5glaadhb767rl4kh9hwnr5dmjdpj-nodejs-20.19.5-libv8"
+            }
+          ],
+          "store_path": "/nix/store/450w5bzs0afvvn6gphj6azdjsc6jgyrs-nodejs-20.19.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9m7c3y51nqjxbmkrwcpxp2i3kzcg98nh-nodejs-20.19.5",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/2xlyd6dq5qf1rw313jpz1lk49y8jk2jn-nodejs-20.19.5-dev"
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/jcp6g6ca3b43hmq91as4g6rv4w5szwsv-nodejs-20.19.5-libv8"
+            }
+          ],
+          "store_path": "/nix/store/9m7c3y51nqjxbmkrwcpxp2i3kzcg98nh-nodejs-20.19.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9gwbsq5m829imy2009f4m0lzw5j2sb3k-nodejs-20.19.5",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/rgs9pkh3cfm44i9a11pna0j70vzsnnrk-nodejs-20.19.5-libv8"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/rhl3m9yiqqhsrwhlwjy1br3qibslc807-nodejs-20.19.5-dev"
+            }
+          ],
+          "store_path": "/nix/store/9gwbsq5m829imy2009f4m0lzw5j2sb3k-nodejs-20.19.5"
+        }
+      }
+    }
+  }
+}
