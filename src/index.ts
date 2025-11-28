@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import ignoreWalk from 'ignore-walk';
@@ -5,7 +6,6 @@ import ignoreWalk from 'ignore-walk';
 import { processNestedRule } from './lib';
 
 try {
-  process.chdir(process.argv[2]);
   const rules = collectIgnoreRules();
   let content = rules.join('\n') + '\n';
   if (existsSync('.prettierignore-append')) {
