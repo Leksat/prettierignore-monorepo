@@ -1,38 +1,20 @@
 # .prettierignore for monorepos
 
-The package is a temporary workaround for
-https://github.com/prettier/prettier/issues/4081
+Workaround for
+[Prettier's inability to use nested ignore-files](https://github.com/prettier/prettier/issues/4081)
 
-What it does:
+What `prettierignore-monorepo` bin does:
 
-- Collects all `.gitignore` and `.prettierignore` files in the given path
+- Collects all `.gitignore` and `.prettierignore` files in the monorepo
 - Glues them into a single root `.prettierignore`
-- Appends rules from the root `.prettierignore-append`
+- Appends rules from the root `.prettierignore-append` (optional)
 
-## Installation
+## Usage
 
-1. Install the package as a dev dependency
-
-   ```
-   pnpm i -Dw prettierignore-monorepo
-   ```
-
-2. Rename your root `.prettierignore` to `.prettierignore-append`
-
-   ```
-   mv .prettierignore .prettierignore-append
-   ```
-
-3. Add `/.prettierignore` to your root `.gitignore`
-
-   ```
-   echo "/.prettierignore" >> .gitignore
-   ```
-
-4. Let the package regenerate the root `.prettierignore` on some event.  
-   For example, use githooks or add a `postinstall` script to your root
-   `package.json`
-
-   ```
-   npm pkg set scripts.postinstall=prettierignore-monorepo
-   ```
+- Install as a dev dependency in the monorepo root
+- If `.prettierignore` exists in the root, rename it to `.prettierignore-append`
+  (and `git rm --cached .prettierignore`)
+- Add `/.prettierignore` to root `.gitignore`
+- Run `prettierignore-monorepo` bin to generate initial `.prettierignore`
+- Set up the `prettierignore-monorepo` bin to run on some event (e.g. on a git
+  hook, or in the `postinstall` script of the root `package.json`)
