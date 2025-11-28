@@ -11,18 +11,27 @@ What it does:
 
 ## Installation
 
-- Install the package as a dev dependency
-- Rename your root `.prettierignore` to `.prettierignore-append`
-- Add `/.prettierignore` to your root `.gitignore`
-- Let the package regenerate the root `.prettierignore` on some event, e.g.
-  - Add a `postinstall` script to your root `package.json`
+1. Install the package as a dev dependency
 
-  ```json
-  {
-    "scripts": {
-      "postinstall": "prettierignore-monorepo"
-    }
-  }
-  ```
+   ```
+   pnpm i -D prettierignore-monorepo
+   ```
 
-  - Use githooks
+2. Rename your root `.prettierignore` to `.prettierignore-append`
+
+   ```
+   mv .prettierignore .prettierignore-append
+   ```
+
+3. Add `/.prettierignore` to your root `.gitignore`
+
+   ```
+   echo "/.prettierignore" >> .gitignore
+   ```
+
+4. Let the package regenerate the root `.prettierignore` on some event. E.g. use
+   githooks. Or add a `postinstall` script to your root `package.json`
+
+   ```
+   npm pkg set scripts.postinstall=prettierignore-monorepo
+   ```
